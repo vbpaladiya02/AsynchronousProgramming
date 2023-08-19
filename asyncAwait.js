@@ -3,8 +3,11 @@ function fetchUserData(userId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const users = {
-          1: { id: 1, name: 'Alice' },
-          2: { id: 2, name: 'Bob' },
+          1: { id: 1, name: 'Vivek' },
+          2: { id: 2, name: 'Sourav' },
+          3: { id: 3, name: 'Vaibhav' },
+          4: { id: 4, name: 'Pratik' },
+          5: { id: 5, name: 'Nikhil' },
         };
         
         const user = users[userId];
@@ -30,5 +33,5 @@ function fetchUserData(userId) {
   
   // Calling the async function
   getUserData(1);
-  getUserData(3); // This will trigger an error
+  getUserData(2); // This will trigger an error
   
